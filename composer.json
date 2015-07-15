@@ -1,9 +1,9 @@
 {
-  "name": "laravelcollective/remote",
-  "description": "Remote for The Laravel Framework.",
+  "name": "adrianthedev/remote",
+  "description": "Remote port for The Lumen Framework.",
   "keywords": [
     "framework",
-    "laravel",
+    "lumen",
     "remote"
   ],
   "license": "MIT",
@@ -15,6 +15,10 @@
     {
       "name": "Tom Shafer",
       "email": "tj@tjshafer.com"
+    },
+    {
+      "name": "Adrian Marin",
+      "email": "adrian@adrianthedev.com"
     }
   ],
   "require": {

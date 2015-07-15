@@ -1,6 +1,6 @@
 <?php namespace Collective\Remote;
 
-use Illuminate\Foundation\Application;
+use Laravel\Lumen\Application;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\NullOutput;
 
@@ -13,11 +13,11 @@ class RemoteManager {
 	 */
 	protected $app;
 
-	/**
-	 * Create a new remote manager instance.
-	 *
-	 * @param  \Illuminate\Foundation\Application $app
-	 */
+    /**
+     * Create a new remote manager instance.
+     *
+     * @param \Illuminate\Foundation\Application|Application $app
+     */
 	public function __construct( Application $app ) {
 		$this->app = $app;
 	}
@@ -95,7 +95,6 @@ class RemoteManager {
 	 */
 	protected function makeConnection( $name, array $config ) {
 		$this->setOutput( $connection = new Connection(
-
 			$name, $config['host'], $config['username'], $this->getAuth( $config )
 
 		) );
